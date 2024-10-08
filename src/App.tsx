@@ -6,6 +6,9 @@ import './App.css';
 function App() {
   const [count, setCount] = useState(0);
 
+  const a = 12; // Ожидаем, что будет предупреждение
+  const b: number = 12; // Здесь предупреждений не будет, так как тип указан явно.
+
   return (
     <>
       <div>
