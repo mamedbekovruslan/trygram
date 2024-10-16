@@ -1,14 +1,7 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import App from './App.tsx';
-import { createBrowserRouter, RouteObject, RouterProvider } from 'react-router-dom';
-
-const routes: RouteObject[] = [
-  {
-    path: '/auth',
-    element: <App />,
-  },
-];
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { routes } from './routes';
 
 const router: ReturnType<typeof createBrowserRouter> = createBrowserRouter(routes);
 
